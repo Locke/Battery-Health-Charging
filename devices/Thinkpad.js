@@ -373,7 +373,7 @@ var ThinkpadSingleBatteryBAT0 = GObject.registerClass({
 
     _disableBatteryCapacityMonitoring() {
         this._disableForceDischarge();
-        if (this._proxy !== null)
+        if (this._proxy != null)
             this._proxy.disconnect(this._proxyId);
         this._proxyId = null;
         this._proxy = null;
